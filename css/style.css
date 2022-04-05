@@ -1,0 +1,181 @@
+html {
+    scroll-behavior: smooth;
+}
+.header {
+    height: 60px;
+    background-color: #fefefe;
+    box-shadow: 0 0 10px 0 black;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 2;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    min-height: 100%;
+}
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a {
+    color: black;
+}
+.logo {
+    text-transform: uppercase;
+    color: black;
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+}
+.logo span {
+    color: #879c36;
+}
+.menu {
+    width: 50%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+#home {
+    background-image: url(../img/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#about {
+    background-color: #fefefe;
+}
+#works {
+    background-image: url(../img/bg2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#contact {
+    background-color: #fefefe;
+    height: 95vh;
+}
+.section {
+    height: 100vh;
+}
+.home-btn {
+    position: absolute;
+    left: 70px;
+    bottom: 40px;
+    width: 150px;
+    height: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    background-color: white;
+    border: 3px #879c36 solid;
+    color: #879c36;
+    text-align: center;
+}
+.image1 {
+    background-image: url(../img/about1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 35%;
+    height: 70vh;
+    position: relative;
+}
+.image1::before {
+    content: '';
+    position: absolute;
+    border: 5px #879c36 double;
+    top: -20px;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+}
+.text1 {
+    width: 60%;
+    padding-left: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    position: relative;
+}
+.text-header {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.text2 {
+    color: #879c36;
+}
+.about-btn {
+    position: absolute;
+    left: 20px;
+    top: 170px;
+    width: 150px;
+    height: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    background-color: white;
+    border: 3px #879c36 solid;
+    color: #879c36;
+    text-align: center;
+}
+.content-image {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.image {
+    width: 30%;
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.image:nth-child(1) {
+    background-image: url(../img/project1.png);
+}
+.image:nth-child(2) {
+    background-image: url(../img/project2.png);
+}
+.image:nth-child(3) {
+    background-image: url(../img/project3.png);
+}
+.image::before {
+    content: 'My Project';
+    background-color: aquamarine;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -100%;
+    left: 0px;
+    transition-property: all;
+    transition-duration: 0.7s;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+.image:hover::before {
+    top: 0px;
+}
+.contacts-info {
+    width: 30%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+.contacts-map {
+    width: 70%;
+    height: 70vh;
+    border: 5px #879c36 solid;
+}
+.footer {
+    height: 5vh;
+    background-color: white;
+    text-align: center; 
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+}
